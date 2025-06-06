@@ -1,343 +1,136 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Meu Portfólio Pessoal">
+<html lang="pt-br" data-color-mode="dark" data-theme="light:dark typography:typography-refreshed spacing:spacing shape:shape">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio Pessoal de Felipe Silveira, Desenvolvedor Backend.">
     <meta name="author" content="Felipe Silveira">
-    <!-- <link rel="import" href="components/skills.html"> -->
 
     <title>Felipe Silveira - Desenvolvedor Backend</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/atlassian-dark-theme.css" rel="stylesheet">
+    
+    <link href="style.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Jura|Ubuntu+Mono" rel="stylesheet">
-
-    <!-- Icons -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
-    <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
-  </head>
-
-  <body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <div class="list-inline">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#experience">Experiência</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#education">Educação</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Projetos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#principles">Princípios</a>
-            </li>
-          </ul>
-      </div>
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Felipe Silveira</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="Foto do Perfil">
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experiência</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Educação</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projetos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#principles">Princípios</a>
-          </li>
-        </ul>
-      </div>
-      <div class="row stack-overflow-section">
-        <div class="col-md-5">
-            <a href="https://stackoverflow.com/users/20648160/felipe-galdy-silveira" target="_blank">
-              Stack Overflow
-            </a>
-        </div>
-        <div class="col-md-5 reputation-text">
-          Reputação: <span class="stack-overflow-reputation">0001</span>
-        </div>
-      </div>
-      <div class="row social-icons">
-          <div class="col-md-4">
-            <a href="https://www.linkedin.com/in/felipesilveirasp" target="_blank"> 
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://github.com/felipe-silveira-dev" target="_blank"> 
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://medium.com/@galdysilveira7" target="_blank"> 
-              <i class="fab fa-medium-m"></i>
-            </a>
-          </div>
-        </div>
-      </nav>
-    </nav>
-
-    <div class="container-fluid p-0">
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-            <div class="typewriter">
-              <h1 class="mb-0">Felipe Silveira</h1>
+</head>
+<body>
+    <div class="portfolio-container">
+        <nav class="sidebar">
+            <div class="sidebar__profile">
+                <img src="img/profile.jpg" alt="Foto de perfil de Felipe Silveira" class="sidebar__profile-img">
+                <h1 class="sidebar__profile-name">Felipe Silveira</h1>
+                <p class="sidebar__profile-title">Desenvolvedor Backend</p>
             </div>
-          <span> <i class="fa fa-map-marker-alt"></i> Brasil</span>
-          <div class="subheading mb-5">Desenvolvedor Backend
-            <a href="mailto:felipe.silveira5@outlook.com">felipe.silveira5@outlook.com</a>
-          </div>
-          <p class="lead mb-2">
-            Formando-se em Engenharia de Software, com aproximadamente 2 anos de experiência em TI, atuando em diferentes frentes. Atualmente foca seus estudos em backend.
-          </p>
-          <p class="lead mb-5">
-            Experiência com frameworks modernos como NodeJS, NestJS, Laravel, atuando em integração de terceiros e criando APIs Restful.
-          </p>
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-          <h2>Principais Experiências</h2>
-          <h5 class="mb-5">
-            <a target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vQs9BIyb39_k-H7xrf6mI9bsNCrTsdE9uK6p0-NSpJxs-QVIdC61xgRFt5TNz_vDsrc4UNO6s587h5A/pub">Para mais detalhes</a>
-          </h5>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Desenvolvedor Fullstack</h3>
-              <div class="subheading mb-3">Eduzz</div>
-              <p>Atuei em um sistema web utilizado pelos maiores produtores de marketing digital e algumas instituições de ensino do Brasil. Boa experiência adquirida em lidar com sistemas e infraestrutura, trabalhando com implantações utilizando Docker, PHP e Javascript. Também trabalhei no processo de refatoração do frontend com ReactJS.</p>
-              <p><strong>Destaques:</strong></p>
-              <ul>
-                <li>Atuando como fullstack, ganhei bastante experiência com projetos.</li>
-                <li>Atuei em conjunto na refatoração de uma das funcionalidades mais importantes do sistema, aumentando desempenho, manutenibilidade e produtividade dos usuários finais.</li>
-                <li>As atividades do semestre eram definidas seguindo o Design Sprint.</li>
-              </ul>
-              <p><em>Tags: PHP, Laravel, MySQL, Nginx, NestJS, Typescript, SCRUM, Sprint, Docker, Javascript, Livewire, ReactJS</em></p>
+            <ul class="sidebar__nav">
+                <li class="sidebar__nav-item"><a href="#sobre" class="sidebar__nav-link">Sobre</a></li>
+                <li class="sidebar__nav-item"><a href="#experiencias" class="sidebar__nav-link">Experiências</a></li>
+                <li class="sidebar__nav-item"><a href="#formacao" class="sidebar__nav-link">Formação</a></li>
+                <li class="sidebar__nav-item"><a href="#habilidades" class="sidebar__nav-link">Habilidades</a></li>
+                <li class="sidebar__nav-item"><a href="#projetos" class="sidebar__nav-link">Projetos</a></li>
+            </ul>
+            <div class="sidebar__footer">
+                <div class="social-icons">
+                    <a href="https://linkedin.com" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://medium.com" aria-label="Medium" class="social-icon"><i class="fab fa-medium-m"></i></a>
+                </div>
+                 <button id="toggleTheme" class="theme-toggle" aria-label="Alternar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2022 — Atualmente</span>
-            </div>
-          </div>
+        </nav>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Analista de E-commerce</h3>
-              <div class="subheading mb-3">Disco7Vinil</div>
-              <p>Atuei como analista de e-commerce em um grande marketplace utilizado por grandes vendedores e colecionadores de mídia física(vinis, CDs, etc.).</p>
-              <p><strong>Destaques:</strong></p>
-              <ul>
-                <li>Gerenciei todo o ciclo do produto no e-commerce, desde cadastro e precificação inteligente até a logística, garantindo a eficiência operacional e satisfação do cliente.</li>
-                <li>Otimizei anúncios e processos, usei o inglês escrito no dia-a-dia para me comunicar com clientes e parceiros.</li>
-              </ul>
-              <p><em>Tags: Comunicação, Organização, Proatividade, Otimização, Estratégias</em></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2019 – 2022</span>
-            </div>
-          </div>
+        <main class="content">
+            <section id="sobre" class="content-section">
+                <h2 class="content-section__title">Sobre</h2>
+                <p>Formando-se em Engenharia de Software, com aproximadamente 2 anos de experiência em TI, atuando em diferentes frentes. Atualmente foca seus estudos em backend.</p>
+                <p>Experiência com frameworks modernos como NodeJS, NestJS, Laravel, atuando em integração de terceiros e criando APIs Restful.</p>
+            </section>
 
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Desenvolvedor Fullstack (Freelance)</h3>
-              <div class="subheading mb-3">BucoApp</div>
-              <p>Plataforma web voltada a estudos para concursos, atuei como fullstack e apoiei no desenvolvimento algumas features e refatorações. Apesar do pouco tempo, a experiência foi enriquecedora para entender a dinâmica de PJ.</p>
-              <p><em>Tags: PHP, Laravel, MySQL, Nginx, Bootstrap</em></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2017 - 2017</span>
-            </div>
-          </div>
+            <section id="experiencias" class="content-section">
+                <h2 class="content-section__title">Experiências</h2>
+                <div class="resume-item">
+                    <div class="resume-item__header">
+                        <h3 class="resume-item__title">Desenvolvedor Fullstack</h3>
+                        <span class="resume-item__date">2022 — Atualmente</span>
+                    </div>
+                    <p class="resume-item__subtitle">Eduzz</p>
+                    <p>Atuei em um sistema web utilizado pelos maiores produtores de marketing digital e algumas instituições de ensino do Brasil. Boa experiência adquirida em lidar com sistemas e infraestrutura, trabalhando com implantações utilizando Docker, PHP e Javascript. Também trabalhei no processo de refatoração do frontend com ReactJS.</p>
+                </div>
+                <div class="resume-item">
+                    <div class="resume-item__header">
+                        <h3 class="resume-item__title">Analista de E-commerce</h3>
+                        <span class="resume-item__date">2019 – 2022</span>
+                    </div>
+                    <p class="resume-item__subtitle">Disco7Vinil</p>
+                     <p>Gerenciei todo o ciclo do produto no e-commerce, desde cadastro e precificação inteligente até a logística, garantindo a eficiência operacional e satisfação do cliente.</p>
+                </div>
+                <div class="resume-item">
+                    <div class="resume-item__header">
+                        <h3 class="resume-item__title">Desenvolvedor Fullstack (Freelance)</h3>
+                         <span class="resume-item__date">2017</span>
+                    </div>
+                    <p class="resume-item__subtitle">BucoApp</p>
+                    <p>Plataforma web voltada a estudos para concursos, atuei como fullstack e apoiei no desenvolvimento algumas features e refatorações.</p>
+                </div>
+            </section>
 
-        </div>
+            <section id="formacao" class="content-section">
+                <h2 class="content-section__title">Formação Acadêmica</h2>
+                 <div class="resume-item">
+                    <div class="resume-item__header">
+                        <h3 class="resume-item__title">Engenharia de Software</h3>
+                        <span class="resume-item__date">2023 — 2027</span>
+                    </div>
+                    <p class="resume-item__subtitle">Descomplica UniAmérica, Centro Universitário</p>
+                </div>
+                <div class="resume-item">
+                    <div class="resume-item__header">
+                        <h3 class="resume-item__title">Técnico em Administração</h3>
+                         <span class="resume-item__date">2010 – 2011</span>
+                    </div>
+                    <p class="resume-item__subtitle">Centro Paula Souza, ETEC de Francisco Morato</p>
+                </div>
+            </section>
+            
+            <section id="habilidades" class="content-section">
+                <h2 class="content-section__title">Habilidades</h2>
+                <ul class="skills-list">
+                    <li class="skill-item"><i class="devicon-php-plain"></i> PHP</li>
+                    <li class="skill-item"><i class="devicon-laravel-plain"></i> Laravel</li>
+                    <li class="skill-item"><i class="devicon-nodejs-plain"></i> Node.js</li>
+                    <li class="skill-item"><i class="devicon-nestjs-plain"></i> NestJS</li>
+                    <li class="skill-item"><i class="devicon-typescript-plain"></i> TypeScript</li>
+                    <li class="skill-item"><i class="devicon-javascript-plain"></i> JavaScript</li>
+                    <li class="skill-item"><i class="devicon-react-original"></i> React</li>
+                    <li class="skill-item"><i class="devicon-mysql-plain"></i> MySQL</li>
+                    <li class="skill-item"><i class="devicon-docker-plain"></i> Docker</li>
+                </ul>
+            </section>
 
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Formação Acadêmica</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Descomplica UniAmérica, Centro Universitário</h3>
-              <div class="subheading mb-3">Graduando em Engenharia de Software</div>
-              <div>Cursando Engenharia de Software com foco em desenvolvimento e práticas modernas.</div>
-              <!-- <p>GPA: Sua Média (se aplicável)</p> -->
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2023 – 2027</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Centro Paula Souza, ETEC de Francisco Morato</h3>
-              <div class="subheading mb-3">Ensino Profissional de nível técnico com ênfase em Administração</div>
-              <p>Formação técnica em Administração, fornecendo base em gestão e processos.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2010 – 2011</span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <hr class="m-0">
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Habilidades</h2>
-
-          <div class="subheading mb-3">Linguagens &amp; Ferramentas</div>
-          <ul class="list-inline dev-icons">
-            <li class="list-inline-item" title="PHP">
-              <i class="devicon-php-plain"></i>
-            </li>
-            <li class="list-inline-item" title="Laravel">
-              <i class="devicon-laravel-plain"></i>
-            </li>
-            <li class="list-inline-item" title="MySQL">
-              <i class="devicon-mysql-plain"></i>
-            </li>
-            <li class="list-inline-item" title="Nginx">
-              <i class="devicon-nginx-original"></i>
-            </li>
-            <li class="list-inline-item" title="Node.js">
-              <i class="devicon-nodejs-plain"></i>
-            </li>
-            <li class="list-inline-item" title="NestJS">
-              <i class="devicon-nestjs-plain"></i>
-            </li>
-            <li class="list-inline-item" title="TypeScript">
-              <i class="devicon-typescript-plain"></i>
-            </li>
-            <li class="list-inline-item" title="JavaScript">
-              <i class="devicon-javascript-plain"></i>
-            </li>
-            <li class="list-inline-item" title="React">
-              <i class="devicon-react-original"></i>
-            </li>
-            <li class="list-inline-item" title="Docker">
-              <i class="devicon-docker-plain"></i>
-            </li>
-            <li class="list-inline-item" title="Git">
-              <i class="fab fa-git-alt"></i>
-            </li>
-             <li class="list-inline-item" title="HTML5">
-              <i class="fab fa-html5"></i>
-            </li>
-            <li class="list-inline-item" title="CSS3">
-              <i class="fab fa-css3-alt"></i>
-            </li>
-          </ul>
-
-          <div class="subheading mb-3">Metodologias &amp; Soft Skills</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              SCRUM &amp; Sprints</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Design Sprint</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Comunicação Efetiva</li>
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Organização e Proatividade</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Otimização de Processos</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Trabalho em Equipe e Colaboração</li>
-          </ul>
-          <br>
-          <div class="subheading mb-3">Idiomas</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-language"></i>
-              <strong>Inglês:</strong> Compreensão (Muito boa), Fala (Razoável), Escrita (Razoável), Leitura (Muito boa)
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
-        <div class="my-auto">
-          <h2 class="mb-5">Projetos</h2>
-          <p>Descreva aqui alguns dos seus projetos mais interessantes. Você pode linkar para repositórios no GitHub ou demos online.</p>
-          <p class="mb-0">Exemplo de Projeto 1: Uma breve descrição do projeto e as tecnologias utilizadas.</p>
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="principles">
-        <div class="my-auto">
-          <h2 class="mb-5">Princípios</h2>
-          <p>Descreva aqui os princípios que guiam seu trabalho como desenvolvedor(a). Por exemplo, paixão por código limpo, aprendizado contínuo, colaboração, etc.</p>
-        </div>
-      </section>
-
+            <section id="projetos" class="content-section">
+                <h2 class="content-section__title">Projetos</h2>
+                <p>Em breve, projetos pessoais e estudos de caso serão exibidos aqui.</p>
+            </section>
+        </main>
     </div>
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.3.4/lib/darkmode-js.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
-    <script src="js/darkmode.min.js"></script>
-    <script src="js/fetch-reputation.min.js"></script>
     <script>
-      $(document).ready(() => {
-        // Adicione aqui qualquer script específico para inicialização da página, se necessário.
+      const toggleThemeButton = document.getElementById('toggleTheme');
+      const htmlElement = document.documentElement;
+      const themeIcon = toggleThemeButton.querySelector('i');
+
+      toggleThemeButton.addEventListener('click', () => {
+        const isDarkMode = htmlElement.getAttribute('data-color-mode') === 'dark';
+        if (isDarkMode) {
+          htmlElement.setAttribute('data-color-mode', 'light');
+          themeIcon.className = 'fas fa-sun';
+        } else {
+          htmlElement.setAttribute('data-color-mode', 'dark');
+           themeIcon.className = 'fas fa-moon';
+        }
       });
     </script>
-  </body>
-
+</body>
 </html>
