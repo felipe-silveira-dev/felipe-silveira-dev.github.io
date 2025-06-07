@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="dark">
+<html lang="pt-br" data-theme="light:dark typography:typography-refreshed spacing:spacing shape:shape">
 
 <head>
   <meta charset="UTF-8">
@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
-<body class="bg-white dark:bg-[#0F1214] text-[#3C3F42] dark:text-[#BFC1C4] font-sans antialiased">
+<body class="bg-white dark:bg-[#0F1214] text-[#3C3F42] dark:text-[#BFC1C4] font-sans antialiased !">
   <div class="md:grid md:grid-cols-[300px_1fr] min-h-screen">
     <nav
       class="md:sticky md:top-0 md:h-screen bg-[#F7F8F9] dark:bg-[#1D2125] text-[#5E6C84] dark:text-[#A9ABAF] p-6 md:p-8 flex flex-col items-center text-center shadow-lg md:shadow-none">
@@ -32,7 +32,7 @@
           </path>
         </svg>
         <svg id="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-          class="w-5 h-5">
+          class="w-5 h-5 hidden">
           <path fill-rule="evenodd"
             d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-3.51 1.713-6.636 4.362-8.532a.75.75 0 01.819.162z"
             clip-rule="evenodd"></path>
@@ -315,21 +315,48 @@
     const sunIcon = document.getElementById('theme-icon-sun');
     const moonIcon = document.getElementById('theme-icon-moon');
 
-    function setThemeIcon() {
-      if (htmlElement.classList.contains('dark')) {
+    // Função para definir o tema e o ícone
+    function applyTheme(theme) {
+      if (theme === 'dark') {
+        htmlElement.classList.add('dark');
         moonIcon.classList.remove('hidden');
         sunIcon.classList.add('hidden');
       } else {
+        htmlElement.classList.remove('dark');
         sunIcon.classList.remove('hidden');
         moonIcon.classList.add('hidden');
       }
     }
 
-    setThemeIcon();
+    // Verifica o tema salvo no localStorage ou a preferência do sistema
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+    let currentTheme;
+    if (savedTheme) {
+      currentTheme = savedTheme;
+    } else if (prefersDark) {
+      currentTheme = 'dark';
+    } else {
+      currentTheme = 'light'; // Padrão para light se nada for definido
+    }
+
+    applyTheme(currentTheme);
+
+    // Event listener para o botão de alternância
     toggleThemeButton.addEventListener('click', () => {
-      htmlElement.classList.toggle('dark');
-      setThemeIcon();
+      const isDark = htmlElement.classList.contains('dark');
+      const newTheme = isDark ? 'light' : 'dark';
+      applyTheme(newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+
+    // Opcional: Ouvir mudanças na preferência do sistema
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      if (!localStorage.getItem('theme')) { // Só altera se o usuário não tiver uma preferência explícita
+        const newTheme = e.matches ? 'dark' : 'light';
+        applyTheme(newTheme);
+      }
     });
   </script>
 </body>
