@@ -9,8 +9,39 @@
 
   <title>Felipe Silveira - Desenvolvedor Backend</title>
 
+  <!-- Google Fonts - Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Tailwind Config -->
+  <script type="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: [
+              'Roboto',
+              '-apple-system',
+              'BlinkMacSystemFont',
+              'Segoe UI',
+              // 'Roboto', // Removido daqui pois já é a primeira
+              'Oxygen',
+              'Ubuntu',
+              'Fira Sans',
+              'Droid Sans',
+              'Helvetica Neue',
+              'sans-serif',
+            ],
+          },
+        },
+      },
+      darkMode: 'class',
+    };
+  </script>
+
   <!-- Devicon (mantido para possíveis ícones de habilidades) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
@@ -39,7 +70,7 @@
         <li><a href="#projetos" class="block py-2 px-3 rounded font-semibold text-sm md:text-base text-center text-[#5E6C84] dark:text-[#A9ABAF] hover:text-[#0052CC] dark:hover:text-[#669DF1] hover:bg-[#E9F2FF] dark:hover:bg-[#1C2B42] transition-colors duration-200">Projetos</a></li>
       </ul>
       <div class="mt-auto w-full flex flex-col items-center pt-6 border-t border-gray-200 dark:border-gray-700">
-        <div class="flex justify-center gap-x-4 md:gap-x-5">
+        <div class="flex items-center justify-center gap-x-4 md:gap-x-5">
           <a href="https://www.linkedin.com/in/felipesilveirasp/" aria-label="LinkedIn" class="text-[#5E6C84] dark:text-[#A9ABAF] hover:text-[#0052CC] dark:hover:text-[#669DF1] transition-colors duration-200">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50" class="w-6 h-6 md:w-7 md:h-7 fill-current">
               <path
@@ -55,7 +86,7 @@
             </svg>
           </a>
           <a href="https://medium.com/@galdysilveira7" aria-label="Medium" class="text-[#5E6C84] dark:text-[#A9ABAF] hover:text-[#0052CC] dark:hover:text-[#669DF1] transition-colors duration-200">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 72 72" class="w-6 h-6 md:w-7 md:h-7 fill-current">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 72 72" class="w-11 h-11 md:w-11 md:h-11 fill-current">
               <path
                 d="M45.049,14C57.06,14,58,14.94,58,26.951v18.098C58,57.06,57.06,58,45.049,58H26.951C14.94,58,14,57.06,14,45.049V26.951	C14,14.94,14.94,14,26.951,14H45.049z M29.713,44.151c4.502,0,8.151-3.649,8.151-8.151c0-4.502-3.649-8.151-8.151-8.151	c-4.502,0-8.151,3.649-8.151,8.151C21.562,40.502,25.212,44.151,29.713,44.151z M42.713,43.757c2.228,0,4.034-3.473,4.034-7.757	c0-4.284-1.806-7.757-4.034-7.757c-2.228,0-4.034,3.473-4.034,7.757C38.679,40.284,40.485,43.757,42.713,43.757z M48.98,42.928	c0.775,0,1.403-3.102,1.403-6.928s-0.628-6.928-1.403-6.928c-0.775,0-1.403,3.102-1.403,6.928S48.205,42.928,48.98,42.928z">
               </path>
